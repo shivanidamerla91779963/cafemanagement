@@ -1,0 +1,44 @@
+<body>
+    <mat-card>
+        <b>
+            <span>Dashboard</span>
+        </b>
+    </mat-card>
+    <br>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title">Total Category:</h2>
+                    <h1 class="title">{{data?.category}}</h1>
+                    <p><button class="buttton" [routerLink]="['/cafe/category']" mat-flat-button color="primary"  class="float-right">View Category</button></p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title">Total Product:</h2>
+                    <h1 class="title">{{data?.product}}</h1>
+                    <p><button class="buttton" [routerLink]="['/cafe/product']" mat-flat-button color="primary"  class="float-right">View Product</button></p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title">Total Bill:</h2>
+                    <h1 class="title">{{data?.bill}}</h1>
+                    <p><button class="buttton" [routerLink]="['/cafe/bill']" mat-flat-button color="primary" class="float-right">View Bill</button></p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
